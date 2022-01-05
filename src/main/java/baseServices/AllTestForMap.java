@@ -3,6 +3,7 @@ package baseServices;
 import sun.reflect.generics.tree.Tree;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
@@ -50,4 +51,21 @@ public class AllTestForMap {
         return entryString.toString();
     }
 
+    public void getNullFromMap(){
+        Map map= new HashMap();
+        map.put("123","dkf");
+        Object def = map.get("def");
+        System.out.println("----------"+def.toString()+"2--------");
+    }
+
+    public void strings(){
+        String a="assdfs";
+        String b="assdfs";
+        System.out.println(a==b);
+        String c=new String("assdfs");
+        System.out.println(a==c);
+        String m="A";
+        String n=new String("A");
+        System.out.println(m==n);
+    }
 }

@@ -9,9 +9,10 @@ public class AllTestForMapTest {
     @Test
     public void test(){
         AllTestForMap allTestForMap = new AllTestForMap();
-        HashMap map = allTestForMap.putTOHashMap();
+        /*HashMap map = allTestForMap.putTOHashMap();
         System.out.println(allTestForMap.allEntryToString(map));
 
-
+        allTestForMap.getNullFromMap();*/
+        allTestForMap.strings();
     }
 }

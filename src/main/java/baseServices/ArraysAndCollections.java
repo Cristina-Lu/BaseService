@@ -53,6 +53,7 @@ public class ArraysAndCollections {
         strings.add("B");
         strings.add("C");
         strings.add("D");
+        strings.remove("D");
         Iterator<String> iterator = strings.iterator();
 
         while (iterator.hasNext()){
