@@ -14,5 +14,6 @@ public class AllTestForMapTest {
 
         allTestForMap.getNullFromMap();*/
         allTestForMap.strings();
+        allTestForMap.testForConcurrentMap();
     }
 }

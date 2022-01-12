@@ -18,7 +18,7 @@ public class AllTestForLockCondition {
             try {
                 lock.lock();
                 System.out.println("=======双线等待信号准备工作======"+Thread.currentThread().getName());
-                condition1.await();//
+                condition1.await();//释放lock并进入阻塞状态
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } finally {

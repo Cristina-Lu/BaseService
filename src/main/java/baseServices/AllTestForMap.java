@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class AllTestForMap {
 
@@ -67,5 +68,10 @@ public class AllTestForMap {
         String m="A";
         String n=new String("A");
         System.out.println(m==n);
+    }
+
+    public void testForConcurrentMap(){
+        ConcurrentHashMap<String,String> concurrentHashMap = new ConcurrentHashMap<>();
+        concurrentHashMap.put("theFirst","one");
     }
 }
